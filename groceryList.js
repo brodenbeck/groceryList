@@ -1,6 +1,3 @@
-// total the prices
-// print total
-
 shoppingList = [
 	item1 = {
 		name: "milk",

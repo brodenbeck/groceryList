@@ -14,14 +14,28 @@ shoppingList = [
 ];
 
 var list = document.getElementById("list");
-var foodTotal = document.getElementById("foodTotal")
+var foodTotal = document.getElementById("foodTotal");
 var total = 0;
+var button = document.getElementById("button");
+
+
 
 shoppingList.forEach(function(item) {
 	var newItem = document.createElement("li");
 	newItem.innerText += item.name + ": " + item.price;
 	list.appendChild(newItem);
 	total += item.price;
+});
+
+button.addEventListener("click", function() {
+	var userFood = document.getElementById("food").value;
+	var userPrice = document.getElementById("price").value;
+	var newUserFood = document.createElement("li");
+	newUserFood.innerText += userFood + ": " + userPrice;
+	list.appendChild(newUserFood);
+	console.log(total);
+	total += userPrice;
+	console.log(total);
 });
 
 foodTotal.innerText = total;

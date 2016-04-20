@@ -1,0 +1,21 @@
+body {
+	background-color: #d3d3d3;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Futura", "Helvetica", "sans serif";
+}
+
+ul {
+	position: relative;
+	width: 50%;
+	left: 25%;
+	list-style: none;
+	font-family: "Garamond", "Times New Roman", "serif";
+	border-bottom: 2px solid black;
+}
+
+li {
+	text-align: center;
+}

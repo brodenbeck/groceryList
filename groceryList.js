@@ -13,11 +13,15 @@ shoppingList = [
 	}
 ];
 
+var list = document.getElementById("list");
+var foodTotal = document.getElementById("foodTotal")
 var total = 0;
 
-shoppingList.forEach(function(el) {
-	console.log(el.name, el.price);
-	total += el.price;
+shoppingList.forEach(function(item) {
+	var newItem = document.createElement("li");
+	newItem.innerText += item.name + ": " + item.price;
+	list.appendChild(newItem);
+	total += item.price;
 });
 
-console.log("total " + total);
+foodTotal.innerText = total;

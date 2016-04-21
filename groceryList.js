@@ -1,13 +1,13 @@
 shoppingList = [
-	item1 = {
+	{
 		name: "milk",
 		price: 1.87
 	},
-	item2 = {
+	{
 		name: "eggs",
 		price: 1.09
 	},
-	item3 = {
+	{
 		name: "bread",
 		price: 1.19
 	}
@@ -35,7 +35,7 @@ button.addEventListener("click", function() {
 	newUserFood.innerText += userFood + ": " + userPrice;
 	list.appendChild(newUserFood);
 	total += userPrice;
-	foodTotal.innerText = total;
+	foodTotal.innerText = total.toFixed(2);
 });
 
 

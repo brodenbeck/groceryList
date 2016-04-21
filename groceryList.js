@@ -25,6 +25,7 @@ shoppingList.forEach(function(item) {
 	newItem.innerText += item.name + ": " + item.price;
 	list.appendChild(newItem);
 	total += item.price;
+	foodTotal.innerText = total;
 });
 
 button.addEventListener("click", function() {

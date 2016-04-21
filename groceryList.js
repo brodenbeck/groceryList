@@ -29,13 +29,13 @@ shoppingList.forEach(function(item) {
 
 button.addEventListener("click", function() {
 	var userFood = document.getElementById("food").value;
-	var userPrice = document.getElementById("price").value;
+	var userPrice = Number(document.getElementById("price").value);
 	var newUserFood = document.createElement("li");
 	newUserFood.innerText += userFood + ": " + userPrice;
 	list.appendChild(newUserFood);
-	console.log(total);
 	total += userPrice;
-	console.log(total);
+	foodTotal.innerText = total;
 });
 
-foodTotal.innerText = total;
+
+
